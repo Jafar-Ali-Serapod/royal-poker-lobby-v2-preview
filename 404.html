@@ -3,15 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-    <title>Royal Poker Lobby v2</title>
+    <title>Royal Poker — Lobby & Wallet</title>
     <link rel="icon" type="image/png" href="./favicon.png" />
     <script>
       document.documentElement.setAttribute("data-theme", "dark");
       document.documentElement.style.colorScheme = "dark";
+      // The shared preview reads better in English; a visitor's own pick still wins.
+      try {
+        if (!localStorage.getItem("royal-locale")) localStorage.setItem("royal-locale", "en");
+      } catch {}
     </script>
-    <script type="module" crossorigin src="./assets/index-NOeBAOFm.js"></script>
+    <script type="module" crossorigin src="./assets/index-C1INDzLX.js"></script>
     <link rel="modulepreload" crossorigin href="./assets/rolldown-runtime-hePW80VL.js">
-    <link rel="stylesheet" crossorigin href="./assets/index-DOsqKVK7.css">
+    <link rel="stylesheet" crossorigin href="./assets/index-CJh9sQD3.css">
   </head>
   <body>
     <div id="app"></div>
